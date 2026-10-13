@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "generated_by": "FinSight Master v1.0",
+    "currency": "IDR",
+    "total_transactions": 10,
+    "pii_redacted": true,
+    "statement_period": "November 2024"
+  },
+  "transactions": [
+    {
+      "id": 1,
+      "original_text": "QRIS*TOKO KOPI TUKU JKT 12938",
+      "normalized_merchant": "Toko Kopi Tuku",
+      "category": "Food & Beverage",
+      "amount": 45000,
+      "transaction_type": "debit",
+      "flag": null
+    },
+    {
+      "id": 2,
+      "original_text": "GRAB-FOOD/ORDER-8821",
+      "normalized_merchant": "GrabFood",
+      "category": "Food & Beverage",
+      "amount": 78500,
+      "transaction_type": "debit",
+      "flag": null
+    },
+    {
+      "id": 3,
+      "original_text": "EDC BCA*INDOMARET ****0012 JKT",
+      "normalized_merchant": "Indomaret",
+      "category": "Shopping",
+      "amount": 120000,
+      "transaction_type": "debit",
+      "flag": null
+    },
+    {
+      "id": 4,
+      "original_text": "TRF/IBK SALARY NOVEMBER 2024",
+      "normalized_merchant": "Payroll - November 2024",
+      "category": "Income",
+      "amount": 8500000,
+      "transaction_type": "credit",
+      "flag": null
+    },
+    {
+      "id": 5,
+      "original_text": "SHOPEE PAY*FASHION STORE",
+      "normalized_merchant": "Shopee - Fashion Store",
+      "category": "Shopping",
+      "amount": 230000,
+      "transaction_type": "debit",
+      "flag": null
+    },
+    {
+      "id": 6,
+      "original_text": "DANA*GOPAY TOPUP",
+      "normalized_merchant": "GoPay Top-Up",
+      "category": "Transfer/Others",
+      "amount": 500000,
+      "transaction_type": "debit",
+      "flag": "POTENTIAL_DOUBLE_COUNT - reconcile against GoPay statement"
+    },
+    {
+      "id": 7,
+      "original_text": "PLN PREPAID TOKEN ****6789",
+      "normalized_merchant": "PLN Prepaid Token",
+      "category": "Utilities & Bills",
+      "amount": 200000,
+      "transaction_type": "debit",
+      "flag": "QUASI_SUBSCRIPTION - periodic top-up pattern"
+    },
+    {
+      "id": 8,
+      "original_text": "NETFLIX.COM/BILL",
+      "normalized_merchant": "Netflix",
+      "category": "Entertainment",
+      "amount": 54000,
+      "transaction_type": "debit",
+      "flag": "SUBSCRIPTION_DETECTED - monthly recurring charge"
+    },
+    {
+      "id": 9,
+      "original_text": "GRAB-BIKE/TRIP-4421",
+      "normalized_merchant": "GrabBike",
+      "category": "Transportation",
+      "amount": 22000,
+      "transaction_type": "debit",
+      "flag": null
+    },
+    {
+      "id": 10,
+      "original_text": "QRIS*KLINIK SEHAT MANDIRI",
+      "normalized_merchant": "Klinik Sehat Mandiri",
+      "category": "Healthcare",
+      "amount": 150000,
+      "transaction_type": "debit",
+      "flag": null
+    }
+  ],
+  "summary": {
+    "total_income": 8500000,
+    "total_expenses": 1399500,
+    "net_position": 7100500,
+    "top_spending_category": "Transfer/Others",
+    "category_breakdown": {
+      "Food & Beverage": 123500,
+      "Shopping": 350000,
+      "Transfer/Others": 500000,
+      "Utilities & Bills": 200000,
+      "Entertainment": 54000,
+      "Transportation": 22000,
+      "Healthcare": 150000
+    },
+    "flags": {
+      "flagged_transactions": [
+        {
+          "merchant": "GoPay Top-Up",
+          "flag": "POTENTIAL_DOUBLE_COUNT - reconcile against GoPay statement"
+        },
+        {
+          "merchant": "PLN Prepaid Token",
+          "flag": "QUASI_SUBSCRIPTION - periodic top-up pattern"
+        },
+        {
+          "merchant": "Netflix",
+          "flag": "SUBSCRIPTION_DETECTED - monthly recurring charge"
+        }
+      ],
+      "potential_subscriptions": [
+        "PLN Prepaid Token",
+        "Netflix"
+      ],
+      "reconciliation_required": [
+        "GoPay Top-Up"
+      ],
+      "duplicate_amounts": {},
+      "duplicates_detected": false
+    }
+  }
+}

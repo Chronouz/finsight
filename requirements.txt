@@ -1,0 +1,14 @@
+# FinSight AI — Python dependencies
+# Core engine uses stdlib only (json, os, datetime, collections).
+# Install extras below only if you extend the project.
+
+# Optional: for richer CLI tables
+# rich>=13.0
+
+# Optional: for chart/plot generation
+# matplotlib>=3.8
+# pandas>=2.0
+
+# Optional: for REST API serving
+# fastapi>=0.110
+# uvicorn>=0.29
